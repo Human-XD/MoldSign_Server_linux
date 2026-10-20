@@ -39,8 +39,8 @@ Nu este inclus niciun fișier MoldSign sau Bit4id în acest depozit — totul se
 
 ### Compatibilitate cărți de identitate
 
-- ✅ **Testat și funcțional** cu un buletin electronic emis de ASP (ATR `3B DF 96 00 81 31 FE 45 80 73 84 21 E0 57 4D 44 41 5F 41 53 50 81 0F 78`, „MDA_ASP”), cititor Bit4id miniLector EVO, Ubuntu 26.04, MoldSign 2.4.12, Bit4id Middleware 1.4.0.1186.
-- ⚠️ **Cărțile de identitate noi (modelul 2025):** alt proiect raportează că același driver Bit4id pentru Linux răspunde „token not recognized” pentru acestea și a publicat un driver modificat: [Bqrry4/MoldSign-eID-Linux-support-PATCH](https://github.com/Bqrry4/MoldSign-eID-Linux-support-PATCH). Dacă `~/MoldSign/log/err_server.log` nu conține „Card inserted” cu buletinul introdus, încercați acea soluție.
+- ✅ **Testat și funcțional — semnare reușită pe msign.gov.md** cu un buletin electronic emis de ASP în **2026** (ATR `3B DF 96 00 81 31 FE 45 80 73 84 21 E0 57 4D 44 41 5F 41 53 50 81 0F 78`, „MDA_ASP”), cititor Bit4id miniLector EVO, Ubuntu 26.04, MoldSign 2.4.12, Bit4id Middleware 1.4.0.1186.
+- ⚠️ **Dacă cardul nu este recunoscut:** alt proiect raportează că pentru unele cărți de identitate din 2025 același driver Bit4id pentru Linux răspunde „token not recognized” și a publicat un driver modificat: [Bqrry4/MoldSign-eID-Linux-support-PATCH](https://github.com/Bqrry4/MoldSign-eID-Linux-support-PATCH). Dacă `~/MoldSign/log/err_server.log` nu conține „Card inserted” cu buletinul introdus, încercați acea soluție.
 - Verificați ATR-ul cardului dvs. cu `pcsc_scan` și deschideți un [issue](https://github.com/Human-XD/MoldSign_Server_linux/issues) cu rezultatul (funcționează / nu funcționează) — ne ajută să completăm lista.
 
 ### Instalare
@@ -133,8 +133,8 @@ No MoldSign or Bit4id files are included in this repository — everything is do
 
 ### ID card compatibility
 
-- ✅ **Tested and working** with an ASP-issued electronic ID card (ATR `3B DF 96 00 81 31 FE 45 80 73 84 21 E0 57 4D 44 41 5F 41 53 50 81 0F 78`, "MDA_ASP"), Bit4id miniLector EVO reader, Ubuntu 26.04, MoldSign 2.4.12, Bit4id Middleware 1.4.0.1186.
-- ⚠️ **New ID cards (2025 model):** another project reports that the same Bit4id Linux driver answers "token not recognized" for these and has published a patched driver: [Bqrry4/MoldSign-eID-Linux-support-PATCH](https://github.com/Bqrry4/MoldSign-eID-Linux-support-PATCH). If `~/MoldSign/log/err_server.log` shows no "Card inserted" with your card in the reader, try that instead.
+- ✅ **Tested and working — document successfully signed on msign.gov.md** with an ASP-issued electronic ID card issued in **2026** (ATR `3B DF 96 00 81 31 FE 45 80 73 84 21 E0 57 4D 44 41 5F 41 53 50 81 0F 78`, "MDA_ASP"), Bit4id miniLector EVO reader, Ubuntu 26.04, MoldSign 2.4.12, Bit4id Middleware 1.4.0.1186.
+- ⚠️ **If your card is not recognized:** another project reports that for some 2025 ID cards the same Bit4id Linux driver answers "token not recognized", and has published a patched driver: [Bqrry4/MoldSign-eID-Linux-support-PATCH](https://github.com/Bqrry4/MoldSign-eID-Linux-support-PATCH). If `~/MoldSign/log/err_server.log` shows no "Card inserted" with your card in the reader, try that instead.
 - Check your card's ATR with `pcsc_scan` and open an [issue](https://github.com/Human-XD/MoldSign_Server_linux/issues) with the result (works / doesn't work) — it helps complete this list.
 
 ### Install
